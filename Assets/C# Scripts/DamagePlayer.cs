@@ -13,12 +13,12 @@ public class DamagePlayer : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "enemyDagger")
+        if (other.tag == "EnemyDagger")
         {
-            Debug.Log("enemydagger touched");
-        }  
+           Debug.Log("enemydagger touched");
+        }
     }
 
 
