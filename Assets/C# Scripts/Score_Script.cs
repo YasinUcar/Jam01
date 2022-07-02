@@ -7,6 +7,7 @@ public class Score_Script : MonoBehaviour
 {
     public int score = 0;
     public Text ScoreText;
+    
 
     void Start()
     {
