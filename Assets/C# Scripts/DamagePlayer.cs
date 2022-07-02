@@ -7,17 +7,25 @@ public class DamagePlayer : MonoBehaviour
 
     public int playerHealth = 30;
     int damage = 10;
+    
+
     void Start()
     {
-        Debug.Log(playerHealth);
+        Debug.Log(playerHealth); 
     }
 
-
-    private void OnTriggerEnter(Collider other)
+    void Update()
     {
+        var HealthChange = GetComponent<PlayerHBDeneme>();
+        HealthChange.DeathOfCharacter();
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        var HealthChange = GetComponent<PlayerHBDeneme>();
         if (other.tag == "EnemyDagger")
         {
-           Debug.Log("enemydagger touched");
+            HealthChange.TakeDamage(10);
         }
     }
 

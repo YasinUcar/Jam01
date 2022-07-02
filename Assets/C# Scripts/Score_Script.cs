@@ -12,12 +12,19 @@ public class Score_Script : MonoBehaviour
     void Start()
     {
         var asd = GetComponent<artificial_intelligence_enemy>();
-        
     }
 
     
     void Update()
     {
-        ScoreText.text = (" Score = " + score);
+        
     }
+
+
+    public void ScoreInCrease(int Scorecomefrom)
+    {
+        score += Scorecomefrom;
+        ScoreText.text = (" Score = " + score);
+    } 
+
 }
