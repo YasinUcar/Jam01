@@ -30,7 +30,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("Cube").transform;
+        player = GameObject.Find("myPlayer").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -79,6 +79,11 @@ public class artificial_intelligence_enemy : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
+
+        if (!playerInAttackRange)
+        {
+            GetComponent<Animator>().SetTrigger("Move");
+        }
     }
 
     private void AttackPlayer()
