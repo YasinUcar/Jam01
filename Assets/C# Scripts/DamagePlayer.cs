@@ -2,25 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class onTriggerHit : MonoBehaviour
+public class DamagePlayer : MonoBehaviour
 {
 
-
-    public int playerHealth=30;
-    int damage=10;
-
+    public int playerHealth = 30;
+    int damage = 10;
     void Start()
     {
         Debug.Log(playerHealth);
     }
 
 
-
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "EnemyDagger")
+        if (other.gameObject.tag == "enemyDagger")
         {
-            Debug.Log(playerHealth -= damage);
-        }
+            Debug.Log("enemydagger touched");
+        }  
     }
+
+
 }
