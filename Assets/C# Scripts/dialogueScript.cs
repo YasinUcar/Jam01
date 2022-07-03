@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class dialogueScript : MonoBehaviour
 {
     public float delay = 0.1f;
@@ -9,9 +10,19 @@ public class dialogueScript : MonoBehaviour
     public string fullText;
     private string currentText = "";
     public TextMeshProUGUI targetText;
+    public int Time = 0;
     void Start()
     {
         StartCoroutine(ShowText());
+    }
+    void Update()
+    {
+        Time++;
+        Debug.Log(Time);
+        if (Input.GetKey(KeyCode.Return))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
     IEnumerator ShowText()
     {
@@ -23,4 +34,9 @@ public class dialogueScript : MonoBehaviour
 
         }
     }
+    public void nextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
 }

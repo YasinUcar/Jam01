@@ -822,6 +822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3425828777849684d8f563b23b5eb37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 0}
+  goblinClip: {fileID: 8300000, guid: e4746aced6e6ff64fb7e2832de456dcc, type: 3}
   hitParticle: {fileID: 5986169503536263949, guid: e372a2a56eec40c4aa5ec6f6ba75dd6d, type: 3}
 --- !u!114 &1926189730
 MonoBehaviour:
@@ -837,6 +839,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 40
   currentHealth: 0
+  dieSound: {fileID: 0}
+  dieClip: {fileID: 8300000, guid: d9692d9512703184980b4f2c068d15d7, type: 3}
   HealthBar: {fileID: 0}
   olduMu: 0
 --- !u!1 &2540005965998951911 stripped
