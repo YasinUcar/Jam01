@@ -68,16 +68,19 @@ public class weaponController : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             canAttack = true;
+            anim.ResetTrigger("Hasar");
+
             float hasarIndex = Random.Range(0, 3);
             attackIndex = Random.Range(0, 3);
             anim.SetFloat("attackIndex", attackIndex);
             anim.SetTrigger("Attack");
 
 
+
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            canAttack = false;
+            // canAttack = false;
         }
 
     }
@@ -108,8 +111,9 @@ public class weaponController : MonoBehaviour
     }
     public void hasarAnim()
     {
-        if (canAttack != true)
+        if (canAttack == false)
         {
+
             hasarIndex = Random.Range(0, 2);
             anim.SetFloat("hasarIndex", hasarIndex);
             anim.SetTrigger("Hasar");
