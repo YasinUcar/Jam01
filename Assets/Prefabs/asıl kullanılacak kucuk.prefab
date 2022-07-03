@@ -92,6 +92,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4675938651706983470, guid: 844fc39e2a112ed40a0a2f4540444bc5, type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 6558432501947160708}
+    - target: {fileID: 4675938651706983470, guid: 844fc39e2a112ed40a0a2f4540444bc5, type: 3}
       propertyPath: hitParticle
       value: 
       objectReference: {fileID: 7226583673155636401, guid: a2ab56839e1c9504ea9d141e95d0b16b, type: 3}

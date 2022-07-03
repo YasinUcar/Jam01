@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16097018, g: 0.19609353, b: 0.24319118, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.16097009, g: 0.19609347, b: 0.24319118, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -4236,7 +4236,7 @@ PrefabInstance:
     - target: {fileID: 6421961947806285881, guid: 14dc5c433e9ebc84081911fda46c6a7a, type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: 5256e097d2d2b6641bd7e90b54559dc7, type: 2}
+      objectReference: {fileID: 23800000, guid: 12633b251f5629b479550f089365e8d6, type: 2}
     - target: {fileID: 6421961947806285883, guid: 14dc5c433e9ebc84081911fda46c6a7a, type: 3}
       propertyPath: m_Name
       value: Navmeshsurfacebake
@@ -5208,6 +5208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "as\u0131l kullan\u0131lacak kucuk"
       objectReference: {fileID: 0}
+    - target: {fileID: 8561898492804769649, guid: 7de61d8151c62104da5e70291195040b, type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 1155128560}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de61d8151c62104da5e70291195040b, type: 3}
 --- !u!1001 &371091893
@@ -18965,6 +18969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "as\u0131l kullan\u0131lacak kucuk (2)"
       objectReference: {fileID: 0}
+    - target: {fileID: 8561898492804769649, guid: 7de61d8151c62104da5e70291195040b, type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 1155128560}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de61d8151c62104da5e70291195040b, type: 3}
 --- !u!1001 &1220218306
@@ -21435,6 +21443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "as\u0131l kullan\u0131lacak kucuk (4)"
       objectReference: {fileID: 0}
+    - target: {fileID: 8561898492804769649, guid: 7de61d8151c62104da5e70291195040b, type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 1155128560}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de61d8151c62104da5e70291195040b, type: 3}
 --- !u!1 &1355095907 stripped
@@ -33246,6 +33258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "as\u0131l kullan\u0131lacak kucuk (3)"
       objectReference: {fileID: 0}
+    - target: {fileID: 8561898492804769649, guid: 7de61d8151c62104da5e70291195040b, type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 1155128560}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de61d8151c62104da5e70291195040b, type: 3}
 --- !u!1 &2084585473 stripped
