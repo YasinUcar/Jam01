@@ -5,41 +5,43 @@ using UnityEngine.UI;
 
 public class Enemy_Health_Bar : MonoBehaviour
 {
-    public float health;
+    public float currenthealth;
     public float maxHealth;
 
     public GameObject healthBarUI;
     public Slider slide;
 
-    private void Start()
+    void Start()
     {
 
-        health = maxHealth;
+        currenthealth = maxHealth;
         slide.value = CalculateHealth();
     }
 
-    private void Update()
+    void Update()
     {
         slide.value = CalculateHealth();
 
-        if (health < maxHealth)
+        if (currenthealth < maxHealth)
         {
             healthBarUI.SetActive(true);
         }
 
-        if(health <= 0)
+        if(currenthealth <= 0)
         {
             Destroy(gameObject);
         }
 
-        if(health > maxHealth)
+        if(currenthealth > maxHealth)
         {
-            health = maxHealth;
+            currenthealth = maxHealth;
         }
     }
 
     float CalculateHealth()
     {
-        return health / maxHealth;
+        var enemytriggersc = GetComponent<EnemyTriggerScript>();
+        enemytriggersc.PlayerDamage(10);
+        return currenthealth - enemytriggersc.playerDamage;
     }
 }

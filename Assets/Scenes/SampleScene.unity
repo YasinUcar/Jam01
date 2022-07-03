@@ -123,36 +123,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &84151561
+--- !u!1001 &357732100
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2477861437678205879, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2477861437678205879, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+    - target: {fileID: 2341398374718553014, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
+      propertyPath: health
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6980075111502223595, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
       propertyPath: m_Name
-      value: "deb_Goblin01 As\u0131l Goblin"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6980075111502223595, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
+      value: "deb_Goblin01 As\u0131l Goblin (1)"
       objectReference: {fileID: 0}
     - target: {fileID: 6980075111502382283, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6980075111502382283, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.822034
       objectReference: {fileID: 0}
     - target: {fileID: 6980075111502382283, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -160,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6980075111502382283, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 4.984661
       objectReference: {fileID: 0}
     - target: {fileID: 6980075111502382283, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -201,7 +193,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7606789844348979823, guid: a8f7117879552f64eb24fad741b43b2b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7606789844348979823, guid: a8f7117879552f64eb24fad741b43b2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -576,6 +568,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7cf823461fad94d48927853cc59af3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1527122815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2341398374718553033, guid: 1ea14f1fd5b94184bb1b232e4d258c8b, type: 3}
+  m_PrefabInstance: {fileID: 357732100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1527122822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527122815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c28623b7fbbcdb4cb3eb654a6126418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1530664178

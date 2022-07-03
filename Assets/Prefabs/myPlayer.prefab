@@ -415,6 +415,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1554275263614364, guid: a29bc099939289b4ba9888d313c76b15, type: 3}
+      propertyPath: m_TagString
+      value: OurWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 1555591857994406, guid: a29bc099939289b4ba9888d313c76b15, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -679,6 +683,15 @@ PrefabInstance:
       propertyPath: m_CullingMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95337640609337054, guid: a29bc099939289b4ba9888d313c76b15, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'Foot.L'\n\tTransform 'Foot.R'\n\tTransform
+        'Neck'\n\tTransform 'LowerArm.L'\n\tTransform 'Hand.L'\n\tTransform 'Toes.R'\n\tTransform
+        'UpperLeg.L'\n\tTransform 'Shoulder.L'\n\tTransform 'Shoulder.R'\n\tTransform
+        'Spine'\n\tand more ...\n\tFrom animation clip 'die'"
+      objectReference: {fileID: 0}
     - target: {fileID: 2344756968329701437, guid: a29bc099939289b4ba9888d313c76b15, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -891,7 +904,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3425828777849684d8f563b23b5eb37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 30
   hitParticle: {fileID: 5024009744349166232}
 --- !u!114 &1926189730
 MonoBehaviour:
@@ -908,11 +920,26 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   HealthBar: {fileID: 0}
+  olduMu: 0
 --- !u!1 &2540005965998951911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1554275263614364, guid: a29bc099939289b4ba9888d313c76b15, type: 3}
   m_PrefabInstance: {fileID: 2538460555824660603}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &4674070667595196036
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2540005965998951911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.0035351638
+  m_Height: 0.011906098
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0.005}
 --- !u!1 &5767566169846157535 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8300396564710985892, guid: a29bc099939289b4ba9888d313c76b15, type: 3}
