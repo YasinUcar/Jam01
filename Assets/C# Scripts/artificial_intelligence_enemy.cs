@@ -20,11 +20,11 @@ public class artificial_intelligence_enemy : MonoBehaviour
     bool walkPointSet;
     public float walkPointRange;
 
-    //Attacking = Saldýrý
+    //Attacking = Saldï¿½rï¿½
     public float timeBetweenAttacks;
     bool alreadyAttacked;
 
-    //States = Sýnýf vb.
+    //States = Sï¿½nï¿½f vb.
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
@@ -36,7 +36,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
 
     private void Update()
     {
-        // Check for sight and attack range = görüþ ve saldýrý menzili kontrolü
+        // Check for sight and attack range = gï¿½rï¿½ï¿½ ve saldï¿½rï¿½ menzili kontrolï¿½
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
@@ -145,6 +145,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
         if (health == 0)
         {
             GetComponent<Animator>().SetTrigger("Die");
+            
         }
 
         yield return new WaitForSeconds(2.5f);
