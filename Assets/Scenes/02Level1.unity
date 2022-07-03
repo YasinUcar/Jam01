@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26572725, g: 0.27143627, b: 0.25494534, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.26572755, g: 0.2714364, b: 0.25494513, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -4195,7 +4195,7 @@ PrefabInstance:
     - target: {fileID: 6421961947806285881, guid: 14dc5c433e9ebc84081911fda46c6a7a, type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: 92ec78517271aff4084f6055e893d43f, type: 2}
+      objectReference: {fileID: 23800000, guid: 74171f9306d54354198270a2d1ab06a0, type: 2}
     - target: {fileID: 6421961947806285883, guid: 14dc5c433e9ebc84081911fda46c6a7a, type: 3}
       propertyPath: m_Name
       value: Navmeshsurfacebake
@@ -32074,7 +32074,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814848549}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 7.999999, y: 10.016069, z: 2.0354683}
@@ -38739,6 +38739,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1468873083}
     m_Modifications:
+    - target: {fileID: 7339650368528971891, guid: dc6b2280d9cd0d54baed96d9c865efc5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8372322299504409634, guid: dc6b2280d9cd0d54baed96d9c865efc5, type: 3}
       propertyPath: m_RootOrder
       value: 469
