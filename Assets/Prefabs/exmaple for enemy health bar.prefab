@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 2374273554135922215}
   - component: {fileID: 2374273554135922212}
   - component: {fileID: 2374273554135922213}
+  - component: {fileID: 4882146400706646292}
   m_Layer: 0
   m_Name: exmaple for enemy health bar
   m_TagString: Untagged
@@ -407,10 +408,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d118120732df3a46b4a2f689f08c53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
+  currenthealth: 0
   healthBarUI: {fileID: 2374273554882036710}
   slide: {fileID: 2374273553659076867}
+--- !u!114 &4882146400706646292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2374273554135922266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c28623b7fbbcdb4cb3eb654a6126418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerDamage: 0
 --- !u!1 &2374273554287501437
 GameObject:
   m_ObjectHideFlags: 0

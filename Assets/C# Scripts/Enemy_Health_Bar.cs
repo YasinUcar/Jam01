@@ -10,6 +10,7 @@ public class Enemy_Health_Bar : MonoBehaviour
 
     public GameObject healthBarUI;
     public Slider slide;
+    public GameObject goblinyokolma;
 
     void Start()
     {
@@ -29,7 +30,7 @@ public class Enemy_Health_Bar : MonoBehaviour
 
         if (currenthealth <= 0)
         {
-            Destroy(gameObject);
+            Destroy(goblinyokolma);
         }
 
         if (currenthealth > maxHealth)
