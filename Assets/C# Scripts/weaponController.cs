@@ -13,8 +13,9 @@ public class weaponController : MonoBehaviour
     [SerializeField] GameObject swordHand;
 
     [SerializeField] GameObject daggerHand;
-    bool canAttack = true;
+    bool canAttack = false;
     float attackIndex;
+    float hasarIndex;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -64,11 +65,19 @@ public class weaponController : MonoBehaviour
 
             }
         }
-        if (Input.GetKeyDown(KeyCode.Mouse0) && canAttack == true)
+        if (Input.GetKey(KeyCode.Mouse0))
         {
+            canAttack = true;
+            float hasarIndex = Random.Range(0, 3);
             attackIndex = Random.Range(0, 3);
             anim.SetFloat("attackIndex", attackIndex);
             anim.SetTrigger("Attack");
+
+
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            canAttack = false;
         }
 
     }
@@ -96,5 +105,14 @@ public class weaponController : MonoBehaviour
 
         daggerHand.SetActive(false);
         swordHand.SetActive(false);
+    }
+    public void hasarAnim()
+    {
+        if (canAttack != true)
+        {
+            hasarIndex = Random.Range(0, 2);
+            anim.SetFloat("hasarIndex", hasarIndex);
+            anim.SetTrigger("Hasar");
+        }
     }
 }
