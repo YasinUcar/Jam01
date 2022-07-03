@@ -5,7 +5,7 @@ using UnityEngine;
 public class DamagePlayer : MonoBehaviour
 {
 
-    public int playerHealth = 30;
+    public int playerHealth = 100;
     int damage = 10;
 
 
@@ -26,7 +26,7 @@ public class DamagePlayer : MonoBehaviour
         if (other.tag == "EnemyDagger")
         {
            PlayerHBDeneme.TakeDamage(10);
-
+            Debug.Log(PlayerHBDeneme.currentHealth);
         }
     }
 
