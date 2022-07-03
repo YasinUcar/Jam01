@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyTriggerScript : MonoBehaviour
 {
-    public int playerDamage = 10;
+    public float playerDamage;
     
     void Start()
     {
@@ -16,7 +16,9 @@ public class EnemyTriggerScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            PlayerDamage(10);
+            PlayerDamage(0.100f);
+            var enemyhealthbar = GetComponent<Enemy_Health_Bar>();
+            enemyhealthbar.lastDamage();
         }
     }
 
@@ -28,8 +30,9 @@ public class EnemyTriggerScript : MonoBehaviour
 
         }
     }
-    public void PlayerDamage(int damageplayer)
+    public void PlayerDamage(float damagePlayer)
     {
+       playerDamage= damagePlayer;
         var enemyhealthbar = GetComponent<Enemy_Health_Bar>();
        
     }
