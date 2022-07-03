@@ -7,7 +7,7 @@ public class DamagePlayer : MonoBehaviour
 
     public int playerHealth = 100;
     int damage = 10;
-    [SerializeField] GameObject hitParticle;
+    [SerializeField] ParticleSystem hitParticle;
 
     void Start()
     {
@@ -25,7 +25,7 @@ public class DamagePlayer : MonoBehaviour
         var PlayerHBDeneme = GetComponent<PlayerHBDeneme>();
         if (other.tag == "EnemyDagger")
         {
-            hitParticle.GetComponent<ParticleSystem>().Play();
+            //hitParticle.GetComponent<ParticleSystem>().Play();
             PlayerHBDeneme.TakeDamage(10);
 
         }
