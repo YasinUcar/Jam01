@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class DamagePlayer : MonoBehaviour
 {
 
@@ -39,6 +39,10 @@ public class DamagePlayer : MonoBehaviour
             hitParticle.GetComponent<ParticleSystem>().Play();
             PlayerHBDeneme.TakeDamage(3);
 
+        }
+        if (other.tag == "yeniSahne")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
     }
