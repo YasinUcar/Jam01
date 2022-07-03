@@ -8,7 +8,7 @@ public class EnemyTriggerScript : MonoBehaviour
     
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -40,9 +40,9 @@ public class EnemyTriggerScript : MonoBehaviour
     }
     public void PlayerDamage(float damagePlayer)
     {
-       playerDamage= damagePlayer;
+        playerDamage = damagePlayer;
         //var enemyhealthbar = GetComponent<Enemy_Health_Bar>();
-       
+
     }
 
 }

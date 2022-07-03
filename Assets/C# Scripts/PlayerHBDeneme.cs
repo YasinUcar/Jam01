@@ -9,6 +9,9 @@ public class PlayerHBDeneme : MonoBehaviour
     public int currentHealth;
     Animator anim;
     float hasarIndex;
+    public AudioSource dieSound;
+    public AudioClip dieClip;
+
     public CanvasHealthBarCode HealthBar;
     public bool olduMu;
 
@@ -46,6 +49,10 @@ public class PlayerHBDeneme : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            if (dieSound.isPlaying != true)
+            {
+                dieSound.PlayOneShot(dieClip);
+            }
             StartCoroutine(ikiSaniyeBekle());
         }
     }
