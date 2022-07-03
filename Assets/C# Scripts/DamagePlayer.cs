@@ -5,13 +5,13 @@ using UnityEngine;
 public class DamagePlayer : MonoBehaviour
 {
 
-    public int playerHealth = 100;
+   
     int damage = 10;
     [SerializeField] GameObject hitParticle;
 
     void Start()
     {
-        Debug.Log(playerHealth);
+        
     }
 
     void Update()
