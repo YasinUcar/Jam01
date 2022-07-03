@@ -7457,7 +7457,9 @@ MonoBehaviour:
   handWeapon: {fileID: 1737137717}
   backWeapon: {fileID: 1024824811}
   swordHand: {fileID: 121842010}
-  daggerHand: {fileID: 0}
+  daggerHand: {fileID: 2112725793}
+  attackSound: {fileID: 0}
+  attackClip: {fileID: 0}
 --- !u!114 &523269724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34192,6 +34194,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1926189730, guid: 9caa09d68e9fc3d4e8c4fd8564a6868f, type: 3}
+      propertyPath: HealthBar
+      value: 
+      objectReference: {fileID: 2023140991}
     - target: {fileID: 94733557252454557, guid: 9caa09d68e9fc3d4e8c4fd8564a6868f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4
@@ -36483,6 +36489,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.999999, y: 0.00000060398315, z: 7.999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2023140991 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3683483977351050661, guid: ec2babcb6c67ec742998f98e917002b2, type: 3}
+  m_PrefabInstance: {fileID: 354820092}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf823461fad94d48927853cc59af3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2023148140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38041,6 +38058,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.999999, y: 0.00000060398315, z: 7.999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2112725793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5767566169846157535, guid: 9caa09d68e9fc3d4e8c4fd8564a6868f, type: 3}
+  m_PrefabInstance: {fileID: 1932469048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2113488126 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
