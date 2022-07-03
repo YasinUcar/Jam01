@@ -21,8 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/03Level2.unity
     guid: c18e29b1913d0cf4b908536481ed9bae
   - enabled: 1
-    path: Assets/Scenes/castleDemo.unity
-    guid: 5a55d96ae7c7e134a8b1f7ee8a7d2f25
+    path: Assets/Scenes/04Level3.unity
+    guid: 3ba5647078ee10947ad22d0a72e48abb
   - enabled: 1
     path: "Assets/Scenes/zLastKrall\u0131k.unity"
     guid: f3aabcd13ad101b48a701523d23b05b0

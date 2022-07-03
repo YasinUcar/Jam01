@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16097009, g: 0.19609347, b: 0.24319118, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.16097018, g: 0.19609353, b: 0.24319118, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -17165,8 +17165,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.000002, y: 0, z: 10}
-  m_Center: {x: -1.1284746e-36, y: 1.1102236e-16, z: 0}
+  m_Size: {x: 10.000002, y: 0, z: 9.999998}
+  m_Center: {x: 0, y: 1.1102236e-16, z: 1.1284746e-36}
 --- !u!64 &1006070251
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17855,6 +17855,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1468873083}
     m_Modifications:
+    - target: {fileID: 154972, guid: eda319de497b2a4449c2ab39265a3ac5, type: 3}
+      propertyPath: m_TagString
+      value: yeniSahne
+      objectReference: {fileID: 0}
     - target: {fileID: 413392, guid: eda319de497b2a4449c2ab39265a3ac5, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.6360782

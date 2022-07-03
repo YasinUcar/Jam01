@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16097009, g: 0.19609347, b: 0.24319118, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.16097018, g: 0.19609353, b: 0.24319118, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -11696,7 +11696,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788622864}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 43.18, y: 5.03, z: -7.81}
+  m_LocalPosition: {x: 42.62, y: 5.03, z: -7.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34396,6 +34396,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1468873083}
     m_Modifications:
+    - target: {fileID: 7339650368528971891, guid: dc6b2280d9cd0d54baed96d9c865efc5, type: 3}
+      propertyPath: m_Size.z
+      value: 3.0832717
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339650368528971891, guid: dc6b2280d9cd0d54baed96d9c865efc5, type: 3}
+      propertyPath: m_Center.x
+      value: -3.3967207e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339650368528971891, guid: dc6b2280d9cd0d54baed96d9c865efc5, type: 3}
+      propertyPath: m_Center.z
+      value: 0.5239022
+      objectReference: {fileID: 0}
     - target: {fileID: 8372322299504409634, guid: dc6b2280d9cd0d54baed96d9c865efc5, type: 3}
       propertyPath: m_RootOrder
       value: 368
@@ -34451,6 +34463,10 @@ PrefabInstance:
     - target: {fileID: 8372322299504553374, guid: dc6b2280d9cd0d54baed96d9c865efc5, type: 3}
       propertyPath: m_Name
       value: doorway1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372322299504553374, guid: dc6b2280d9cd0d54baed96d9c865efc5, type: 3}
+      propertyPath: m_TagString
+      value: yeniSahne
       objectReference: {fileID: 0}
     - target: {fileID: 8372322299504745618, guid: dc6b2280d9cd0d54baed96d9c865efc5, type: 3}
       propertyPath: m_IsActive
