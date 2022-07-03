@@ -26,14 +26,14 @@ public class EnemyTriggerScript : MonoBehaviour
     {
         if (other.tag == "OurWeapon")
         {
-            var enemyhealthbar = GetComponent<Enemy_Health_Bar>();
+            //var enemyhealthbar = GetComponent<Enemy_Health_Bar>();
 
         }
     }
     public void PlayerDamage(float damagePlayer)
     {
        playerDamage= damagePlayer;
-        var enemyhealthbar = GetComponent<Enemy_Health_Bar>();
+        //var enemyhealthbar = GetComponent<Enemy_Health_Bar>();
        
     }
 
