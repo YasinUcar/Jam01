@@ -573,7 +573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4065501370703234, guid: a29bc099939289b4ba9888d313c76b15, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.2
+      value: -51
       objectReference: {fileID: 0}
     - target: {fileID: 4065501370703234, guid: a29bc099939289b4ba9888d313c76b15, type: 3}
       propertyPath: m_LocalPosition.y
@@ -811,6 +811,8 @@ MonoBehaviour:
   backWeapon: {fileID: 8658236221687189551}
   swordHand: {fileID: 919132147711375897}
   daggerHand: {fileID: 5767566169846157535}
+  attackSound: {fileID: 0}
+  attackClip: {fileID: 8300000, guid: b5c340d55ab35174fa36fe26ce41cf69, type: 3}
 --- !u!114 &523269724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -859,7 +861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b95493e3c65a4bb86ce13c87665da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 40
+  maxHealth: 1500
   currentHealth: 0
   dieSound: {fileID: 0}
   dieClip: {fileID: 8300000, guid: d9692d9512703184980b4f2c068d15d7, type: 3}
