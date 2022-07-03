@@ -598,9 +598,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7606789844349014931}
+  - component: {fileID: 4201565175108517469}
   m_Layer: 0
   m_Name: Weapon_bone.R
-  m_TagString: Untagged
+  m_TagString: EnemyDagger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -612,7 +613,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7606789844349244305}
-  m_LocalRotation: {x: -0.07287362, y: -0.005838789, z: 0.73557734, w: 0.67348456}
+  m_LocalRotation: {x: 0.02580127, y: 0.023500405, z: 0.7388518, w: 0.6729637}
   m_LocalPosition: {x: -0.00056043407, y: 0.0030015141, z: 0.0013325583}
   m_LocalScale: {x: 1, y: 1.0000001, z: 0.9999999}
   m_ConstrainProportionsScale: 0
@@ -620,7 +621,21 @@ Transform:
   - {fileID: 7606789844348967921}
   m_Father: {fileID: 7606789844349015715}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 4, z: 95.344}
+--- !u!136 &4201565175108517469
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606789844349244305}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.0074904626
+  m_Height: 0.029391503
+  m_Direction: 1
+  m_Center: {x: -0.0014255492, y: 0.007756562, z: -0.00029050338}
 --- !u!1 &7606789844349244393
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +878,7 @@ GameObject:
   - component: {fileID: 7606789844351870223}
   - component: {fileID: 7606789844354767017}
   - component: {fileID: 7606789844789316783}
+  - component: {fileID: 8592337585927842404}
   m_Layer: 0
   m_Name: Goblin_rouge_b 1
   m_TagString: Untagged
@@ -954,7 +970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37dae83aab60ff449bf95419b05337bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
+  agent: {fileID: 8592337585927842404}
   player: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
@@ -971,6 +987,28 @@ MonoBehaviour:
   attackRange: 1
   playerInSightRange: 0
   playerInAttackRange: 0
+--- !u!195 &8592337585927842404
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606789844349248895}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &7606789844349249041
 GameObject:
   m_ObjectHideFlags: 0
