@@ -4236,7 +4236,7 @@ PrefabInstance:
     - target: {fileID: 6421961947806285881, guid: 14dc5c433e9ebc84081911fda46c6a7a, type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: be201a11d54fbcc43866d51aef491fc0, type: 2}
+      objectReference: {fileID: 23800000, guid: 5256e097d2d2b6641bd7e90b54559dc7, type: 2}
     - target: {fileID: 6421961947806285883, guid: 14dc5c433e9ebc84081911fda46c6a7a, type: 3}
       propertyPath: m_Name
       value: Navmeshsurfacebake
