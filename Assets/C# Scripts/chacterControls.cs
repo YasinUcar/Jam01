@@ -50,7 +50,7 @@ public class chacterControls : MonoBehaviour
     }
     void Movement()
     {
-        if (hareketTipi == MovementType.Strafe)
+        if (hareketTipi == MovementType.Strafe && GetComponent<PlayerHBDeneme>().olduMu!=true)
         {
             inputX = Input.GetAxis("Horizontal");
             inputY = Input.GetAxis("Vertical");
@@ -71,7 +71,7 @@ public class chacterControls : MonoBehaviour
             }
         }
 
-        if (hareketTipi == MovementType.Directional)
+        if (hareketTipi == MovementType.Directional && GetComponent<PlayerHBDeneme>().olduMu!=true)
         {
             InputMove();
             InputRotation();

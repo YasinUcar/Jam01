@@ -144,8 +144,9 @@ public class artificial_intelligence_enemy : MonoBehaviour
 
         if (health == 0)
         {
+       
             GetComponent<Animator>().SetTrigger("Die");
-            
+
         }
 
         yield return new WaitForSeconds(2.5f);

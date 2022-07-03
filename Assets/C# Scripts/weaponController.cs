@@ -29,7 +29,7 @@ public class weaponController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            isStrafe = !isStrafe;
+            //isStrafe = !isStrafe;
         }
         if (isStrafe == true)
         {
@@ -65,7 +65,7 @@ public class weaponController : MonoBehaviour
 
             }
         }
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0) && GetComponent<PlayerHBDeneme>().olduMu != true)
         {
             canAttack = true;
             anim.ResetTrigger("Hasar");
@@ -118,5 +118,13 @@ public class weaponController : MonoBehaviour
             anim.SetFloat("hasarIndex", hasarIndex);
             anim.SetTrigger("Hasar");
         }
+
+    }
+    public void dieAnim()
+    {
+
+        anim.SetTrigger("Death");
+
+
     }
 }
