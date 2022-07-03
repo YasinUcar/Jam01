@@ -56,6 +56,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6980075111502223595}
     - target: {fileID: 2374273554135922213, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
+      propertyPath: hitParticle
+      value: 
+      objectReference: {fileID: 7226583673155636401, guid: a2ab56839e1c9504ea9d141e95d0b16b, type: 3}
+    - target: {fileID: 2374273554135922213, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
       propertyPath: goblinyokolma
       value: 
       objectReference: {fileID: 6980075111502223595}
