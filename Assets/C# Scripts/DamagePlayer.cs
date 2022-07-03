@@ -5,20 +5,22 @@ using UnityEngine;
 public class DamagePlayer : MonoBehaviour
 {
 
-   
+
     int damage = 10;
     [SerializeField] GameObject hitParticle;
 
     void Start()
     {
-        
+       
     }
 
     void Update()
     {
         var PlayerHBDeneme = GetComponent<PlayerHBDeneme>();
         PlayerHBDeneme.DeathOfCharacter();
-         hitParticle.SetActive(true);
+    
+      
+
     }
 
     public void OnTriggerEnter(Collider other)
@@ -26,11 +28,14 @@ public class DamagePlayer : MonoBehaviour
         var PlayerHBDeneme = GetComponent<PlayerHBDeneme>();
         if (other.tag == "EnemyDagger")
         {
-            hitParticle.GetComponent<ParticleSystem>().Play();
+
+          
+              Instantiate( hitParticle, new Vector3(transform.position.x,transform.position.y+1,transform.position.z), transform.rotation ) ;
+              hitParticle.GetComponent<ParticleSystem>().Play();
             PlayerHBDeneme.TakeDamage(10);
 
         }
-        hitParticle.SetActive(true);
+
     }
 
 
