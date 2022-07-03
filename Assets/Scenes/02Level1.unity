@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26572755, g: 0.2714364, b: 0.25494513, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.26572725, g: 0.27143627, b: 0.25494534, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -4195,7 +4195,7 @@ PrefabInstance:
     - target: {fileID: 6421961947806285881, guid: 14dc5c433e9ebc84081911fda46c6a7a, type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: be201a11d54fbcc43866d51aef491fc0, type: 2}
+      objectReference: {fileID: 23800000, guid: 92ec78517271aff4084f6055e893d43f, type: 2}
     - target: {fileID: 6421961947806285883, guid: 14dc5c433e9ebc84081911fda46c6a7a, type: 3}
       propertyPath: m_Name
       value: Navmeshsurfacebake
@@ -4773,6 +4773,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2826958427406393730, guid: 53e2c949b8d27674aa3deb4aa80ef689, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2826958427455085666, guid: 53e2c949b8d27674aa3deb4aa80ef689, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
