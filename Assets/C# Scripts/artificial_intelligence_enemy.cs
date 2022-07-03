@@ -13,7 +13,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
 
     public float health;
 
-
+    public Collider player1;
     public Animator anim;
 
     // Patroling = Devriye Gezme
@@ -102,10 +102,12 @@ public class artificial_intelligence_enemy : MonoBehaviour
             if (player.transform.position.x < 0.3f)
             {
                 GetComponent<Animator>().SetTrigger("Attack");
+                player1.isTrigger = true;
             }
             else if (player.transform.position.z < 0.3f)
             {
                 GetComponent<Animator>().SetTrigger("Attack");
+                player1.isTrigger = true;
             }
             else if (player.transform.position.x < 10)
             {
@@ -114,6 +116,9 @@ public class artificial_intelligence_enemy : MonoBehaviour
             else if (player.transform.position.z < 10)
             {
                 GetComponent<Animator>().SetTrigger("Move");
+            }
+            else{
+                player1.isTrigger=false;
             }
             //else
             //{
