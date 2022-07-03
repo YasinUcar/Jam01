@@ -52,6 +52,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2374273554135922213, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 6980075111502223595}
+    - target: {fileID: 2374273554135922213, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
       propertyPath: goblinyokolma
       value: 
       objectReference: {fileID: 6980075111502223595}
@@ -174,15 +178,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4809022575702957606, guid: 63405231928c4df46bcee31d6ef61c5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -43.67
       objectReference: {fileID: 0}
     - target: {fileID: 4809022575702957606, guid: 63405231928c4df46bcee31d6ef61c5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 4809022575702957606, guid: 63405231928c4df46bcee31d6ef61c5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 23.24
       objectReference: {fileID: 0}
     - target: {fileID: 4809022575702957606, guid: 63405231928c4df46bcee31d6ef61c5f, type: 3}
       propertyPath: m_LocalRotation.w

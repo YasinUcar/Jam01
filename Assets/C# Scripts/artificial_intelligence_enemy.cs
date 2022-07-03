@@ -13,6 +13,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
 
     public float health;
 
+
     public Animator anim;
 
     // Patroling = Devriye Gezme
@@ -23,6 +24,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
     //Attacking = Sald�r�
     public float timeBetweenAttacks;
     bool alreadyAttacked;
+    bool olduMu;
 
     //States = S�n�f vb.
     public float sightRange, attackRange;
@@ -32,6 +34,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
     {
         player = GameObject.Find("myPlayer").transform;
         agent = GetComponent<NavMeshAgent>();
+        olduMu = false;
     }
 
     private void Update()
@@ -39,7 +42,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
         // Check for sight and attack range = g�r�� ve sald�r� menzili kontrol�
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-
+        DestroyEnemy();
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInSightRange && playerInAttackRange) AttackPlayer();
@@ -98,7 +101,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
             ///Attack code here
             if (player.transform.position.x < 0.3f)
             {
-                 GetComponent<Animator>().SetTrigger("Attack");
+                GetComponent<Animator>().SetTrigger("Attack");
             }
             else if (player.transform.position.z < 0.3f)
             {
@@ -140,7 +143,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
 
     public void DestroyEnemy()
     {
-        StartCoroutine(DestroyEnemyIEn());
+
     }
 
     IEnumerator DestroyEnemyIEn()
@@ -148,20 +151,29 @@ public class artificial_intelligence_enemy : MonoBehaviour
         var score = GetComponent<Score_Script>();
 
         score.score += 10;
-        
 
-        if (health == 0)
-        {
-       
-            GetComponent<Animator>().SetTrigger("Die");
+        var Enemy_Health_Bar = GetComponent<Enemy_Health_Bar>();
 
-        }
+        GetComponent<Animator>().SetTrigger("Die");
+
+
 
         yield return new WaitForSeconds(2.5f);
 
         Destroy(gameObject);
     }
+    IEnumerator ikiSaniyeBekle()
+    {
 
+        olduMu = true;
+        anim.SetTrigger("Death");
+
+        yield return new WaitForSeconds(2f);
+        Destroy(this.gameObject);
+
+
+
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
@@ -169,4 +181,6 @@ public class artificial_intelligence_enemy : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
     }
+
+
 }

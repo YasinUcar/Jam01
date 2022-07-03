@@ -13,6 +13,9 @@ public class weaponController : MonoBehaviour
     [SerializeField] GameObject swordHand;
 
     [SerializeField] GameObject daggerHand;
+    public AudioSource attackSound;
+    public AudioClip attackClip;
+
     bool canAttack = false;
     float attackIndex;
     float hasarIndex;
@@ -69,7 +72,10 @@ public class weaponController : MonoBehaviour
         {
             canAttack = true;
             anim.ResetTrigger("Hasar");
-
+            if (attackSound.isPlaying != true)
+            {
+                attackSound.PlayOneShot(attackClip);
+            }
             float hasarIndex = Random.Range(0, 3);
             attackIndex = Random.Range(0, 3);
             anim.SetFloat("attackIndex", attackIndex);
