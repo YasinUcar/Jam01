@@ -7107,7 +7107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &507346128
 Transform:
   m_ObjectHideFlags: 0
@@ -31577,6 +31577,15 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2479470709126680229, guid: 9caa09d68e9fc3d4e8c4fd8564a6868f, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'Foot.L'\n\tTransform 'Foot.R'\n\tTransform
+        'Neck'\n\tTransform 'LowerArm.L'\n\tTransform 'Hand.L'\n\tTransform 'Toes.R'\n\tTransform
+        'UpperLeg.L'\n\tTransform 'Shoulder.L'\n\tTransform 'Shoulder.R'\n\tTransform
+        'Spine'\n\tand more ...\n\tFrom animation clip 'die'"
+      objectReference: {fileID: 0}
     - target: {fileID: 2536685339491032569, guid: 9caa09d68e9fc3d4e8c4fd8564a6868f, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -31624,6 +31633,10 @@ PrefabInstance:
     - target: {fileID: 2539006397386573737, guid: 9caa09d68e9fc3d4e8c4fd8564a6868f, type: 3}
       propertyPath: m_Name
       value: myPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024009744349166234, guid: 9caa09d68e9fc3d4e8c4fd8564a6868f, type: 3}
+      propertyPath: looping
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9caa09d68e9fc3d4e8c4fd8564a6868f, type: 3}

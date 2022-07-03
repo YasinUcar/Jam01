@@ -7,7 +7,7 @@ public class DamagePlayer : MonoBehaviour
 
     public int playerHealth = 30;
     int damage = 10;
-[SerializeField] GameObject hitParticle;
+    [SerializeField] GameObject hitParticle;
 
     void Start()
     {
