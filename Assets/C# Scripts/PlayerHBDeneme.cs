@@ -10,6 +10,7 @@ public class PlayerHBDeneme : MonoBehaviour
     Animator anim;
     float hasarIndex;
     public CanvasHealthBarCode HealthBar;
+    public bool olduMu;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class PlayerHBDeneme : MonoBehaviour
         currentHealth = maxHealth;
         HealthBar.SetMaxHealth(maxHealth);
         anim = GetComponent<Animator>();
+        olduMu = false;
     }
 
     // Update is called once per frame
@@ -44,7 +46,22 @@ public class PlayerHBDeneme : MonoBehaviour
     {
         if (currentHealth == 0)
         {
-
+            StartCoroutine(ikiSaniyeBekle());
         }
+    }
+    IEnumerator ikiSaniyeBekle()
+    {
+
+        olduMu = true;
+        var weaponController = GetComponent<weaponController>();
+
+        weaponController.dieAnim();
+
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+
+
+
     }
 }
