@@ -44,7 +44,7 @@ public class PlayerHBDeneme : MonoBehaviour
 
     public void DeathOfCharacter()
     {
-        if (currentHealth == 0)
+        if (currentHealth <= 0)
         {
             StartCoroutine(ikiSaniyeBekle());
         }

@@ -51,6 +51,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2374273554135922213, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
+      propertyPath: goblinyokolma
+      value: 
+      objectReference: {fileID: 6980075111502223595}
+    - target: {fileID: 2374273554135922215, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3710151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374273554135922215, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5502193
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374273554135922215, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374273554135922215, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
+      propertyPath: m_Center.x
+      value: 0.02439043
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374273554135922215, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
+      propertyPath: m_Center.y
+      value: -0.27510965
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374273554135922215, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2374273554135922266, guid: 14d73bec57684f143be913c64061e7ce, type: 3}
       propertyPath: m_Name
       value: exmaple for enemy health bar
@@ -118,7 +146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 944529753, guid: 63405231928c4df46bcee31d6ef61c5f, type: 3}
       propertyPath: timeBetweenAttacks
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 944529753, guid: 63405231928c4df46bcee31d6ef61c5f, type: 3}
       propertyPath: whatIsGround.m_Bits
@@ -190,7 +218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4809022575702983174, guid: 63405231928c4df46bcee31d6ef61c5f, type: 3}
       propertyPath: m_Name
-      value: "deb_Goblin01 As\u0131l Goblin"
+      value: "as\u0131l kullan\u0131l\u0131ack 1"
       objectReference: {fileID: 0}
     - target: {fileID: 4809022575702983174, guid: 63405231928c4df46bcee31d6ef61c5f, type: 3}
       propertyPath: m_TagString

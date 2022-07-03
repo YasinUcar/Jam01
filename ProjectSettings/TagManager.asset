@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnemyDagger
   - OurWeapon
+  - OurWeapon2
   layers:
   - Default
   - TransparentFX

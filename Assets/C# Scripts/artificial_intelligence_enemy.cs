@@ -104,10 +104,18 @@ public class artificial_intelligence_enemy : MonoBehaviour
             {
                 GetComponent<Animator>().SetTrigger("Attack");
             }
-            else
+            else if (player.transform.position.x < 10)
             {
                 GetComponent<Animator>().SetTrigger("Move");
             }
+            else if (player.transform.position.z < 10)
+            {
+                GetComponent<Animator>().SetTrigger("Move");
+            }
+            //else
+            //{
+            //    GetComponent<Animator>().SetTrigger("Move");
+            //}
 
             ///
 
