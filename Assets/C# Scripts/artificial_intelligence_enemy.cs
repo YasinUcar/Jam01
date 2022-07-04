@@ -46,6 +46,8 @@ public class artificial_intelligence_enemy : MonoBehaviour
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInSightRange && playerInAttackRange) AttackPlayer();
+
+
     }
 
     private void Patroling()
@@ -91,6 +93,7 @@ public class artificial_intelligence_enemy : MonoBehaviour
 
     private void AttackPlayer()
     {
+        float differntZ = player1.transform.position.z - transform.position.z;
         //Make sure enemy doesnt move
         agent.SetDestination(transform.position);
 
@@ -99,27 +102,29 @@ public class artificial_intelligence_enemy : MonoBehaviour
         if (!alreadyAttacked)
         {
             ///Attack code here
-            if (player.transform.position.x < 0.3f)
-            {
+
+            // if (player.transform.position.x < 0.3f)
+            // {
                 GetComponent<Animator>().SetTrigger("Attack");
-                player1.isTrigger = true;
-            }
-            else if (player.transform.position.z < 0.3f)
-            {
-                GetComponent<Animator>().SetTrigger("Attack");
-                player1.isTrigger = true;
-            }
-            else if (player.transform.position.x < 10)
-            {
-                GetComponent<Animator>().SetTrigger("Move");
-            }
-            else if (player.transform.position.z < 10)
-            {
-                GetComponent<Animator>().SetTrigger("Move");
-            }
-            else{
-                player1.isTrigger=false;
-            }
+
+            // }
+            // else if (differntZ < 0.3f)
+            // {
+            //     GetComponent<Animator>().SetTrigger("Attack");
+
+            // }
+            // else if (player.transform.position.x < 10)
+            // {
+            //     GetComponent<Animator>().SetTrigger("Move");
+            // }
+            // else if (player.transform.position.z < 10)
+            // {
+            //     GetComponent<Animator>().SetTrigger("Move");
+            // }
+            // else
+            // {
+            //     player1.isTrigger = false;
+            // }
             //else
             //{
             //    GetComponent<Animator>().SetTrigger("Move");

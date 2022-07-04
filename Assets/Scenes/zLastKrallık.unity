@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1754988430}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: dialogueScript, Assembly-CSharp
         m_MethodName: nextScene
         m_Mode: 1
@@ -1593,7 +1593,7 @@ GameObject:
   - component: {fileID: 1754988433}
   - component: {fileID: 1754988432}
   - component: {fileID: 1754988431}
-  - component: {fileID: 1754988430}
+  - component: {fileID: 1754988434}
   m_Layer: 5
   m_Name: DialoguePanel
   m_TagString: Untagged
@@ -1601,23 +1601,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1754988430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754988429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b95339aaa0b07274cb91ce13d39c925d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0.1
-  speed: 0.1
-  fullText: 'Congratulations son, this will save our kingdom. '
-  targetText: {fileID: 1601947527}
-  Time: 0
 --- !u!114 &1754988431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1678,6 +1661,23 @@ RectTransform:
   m_AnchoredPosition: {x: -26.449982, y: 324.23267}
   m_SizeDelta: {x: 1423.2224, y: 397.8225}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1754988434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754988429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1091583649c4a1447807e4b95d39e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  speed: 0.1
+  fullText: 'Congratulations son, this will save our kingdom. '
+  targetText: {fileID: 1601947527}
+  Time: 0
 --- !u!1001 &1868550269
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -26,7 +26,7 @@ public class EnemyTriggerScript : MonoBehaviour
     {
         if (other.gameObject.tag == "OurWeapon")
         {
-            PlayerDamage(0.100f);
+            PlayerDamage(0.200f);
             var enemyhealthbar = GetComponent<Enemy_Health_Bar>();
             enemyhealthbar.lastDamage();
         }

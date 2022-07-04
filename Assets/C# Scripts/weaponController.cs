@@ -68,7 +68,7 @@ public class weaponController : MonoBehaviour
 
             }
         }
-        if (Input.GetKey(KeyCode.Mouse0) && GetComponent<PlayerHBDeneme>().olduMu != true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && GetComponent<PlayerHBDeneme>().olduMu != true)
         {
             canAttack = true;
             anim.ResetTrigger("Hasar");
@@ -76,6 +76,7 @@ public class weaponController : MonoBehaviour
             {
                 attackSound.PlayOneShot(attackClip);
             }
+            
             float hasarIndex = Random.Range(0, 3);
             attackIndex = Random.Range(0, 3);
             anim.SetFloat("attackIndex", attackIndex);

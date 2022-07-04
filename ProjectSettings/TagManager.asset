@@ -8,6 +8,8 @@ TagManager:
   - OurWeapon
   - OurWeapon2
   - yeniSahne
+  - trigger
+  - EnemyDagger2
   layers:
   - Default
   - TransparentFX

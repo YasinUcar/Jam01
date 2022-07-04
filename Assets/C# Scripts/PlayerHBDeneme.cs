@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHBDeneme : MonoBehaviour
 {
 
-    public int maxHealth = 100;
+   int maxHealth = 600;
     public int currentHealth;
     Animator anim;
     float hasarIndex;

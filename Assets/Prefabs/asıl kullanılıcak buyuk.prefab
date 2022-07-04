@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "as\u0131l kullan\u0131l\u0131cak buyuk"
       objectReference: {fileID: 0}
+    - target: {fileID: 6554789736087763850, guid: b7d5d78307aceaf42bfb5104083ee90d, type: 3}
+      propertyPath: m_TagString
+      value: EnemyDagger2
+      objectReference: {fileID: 0}
     - target: {fileID: 6554789736087991648, guid: b7d5d78307aceaf42bfb5104083ee90d, type: 3}
       propertyPath: m_RootOrder
       value: 0
