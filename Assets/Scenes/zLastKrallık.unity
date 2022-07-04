@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Father
+  m_text: The King
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6beee104edd51414f840330bc0e1b86f, type: 2}
   m_sharedMaterial: {fileID: -445294539743936297, guid: 6beee104edd51414f840330bc0e1b86f, type: 2}
