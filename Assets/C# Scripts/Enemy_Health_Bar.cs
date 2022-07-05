@@ -31,9 +31,9 @@ public class Enemy_Health_Bar : MonoBehaviour
             healthBarUI.SetActive(true);
         }
 
-        if (currenthealth <= 0)
+        if (currenthealth <= 0.110)
         {
-           // hitParticle.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            // hitParticle.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             // hitParticle.GetComponent<ParticleSystem>().Play();
             Destroy(goblin.gameObject);
 

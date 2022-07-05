@@ -107,6 +107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "as\u0131l kullan\u0131l\u0131cak orta"
       objectReference: {fileID: 0}
+    - target: {fileID: 7606789844349248895, guid: a8f7117879552f64eb24fad741b43b2b, type: 3}
+      propertyPath: m_TagString
+      value: EnemyDagger2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8f7117879552f64eb24fad741b43b2b, type: 3}
 --- !u!1 &2892314356344967630 stripped
